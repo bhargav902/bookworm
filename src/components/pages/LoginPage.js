@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import LoginForm from '../forms/LoginForm';
-
+import { Link } from "react-router-dom";
 
 import { login } from '../../actions/auth';
 
@@ -22,6 +22,10 @@ class LoginPage extends React.Component {
 
 
                 <LoginForm submit={this.submit} />
+
+                <Link to="/forgot_password">Forget Password </Link>
+
+
             </div>
 
         )
